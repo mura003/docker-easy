@@ -12,7 +12,7 @@ docker images
 
 ## コンテナ立ち上げ
 ```
-docker run -d -p 8888:80 docker-easy/web-nginx
+docker run -d -p 8888:80 -v "`pwd`/html:/html" docker-easy/web-nginx
 ```
 
 ## 起動確認
@@ -25,3 +25,7 @@ docker ps
 docker stop 'コンテナID'
 docker rm 'コンテナID'
 ```
+
+## 概要
+nginxの設定したり、コンテンツをみたいの時のDocker
+html以下のディレクトリがルートディレクトリ
