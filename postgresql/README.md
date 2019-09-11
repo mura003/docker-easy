@@ -15,17 +15,6 @@ docker images
 docker run -d -p 5432:5432 docker-easy/postgresql
 ```
 
-## 起動確認
-```
-docker ps
-```
-
-## 停止・削除
-```
-docker stop 'コンテナID'
-docker rm 'コンテナID'
-```
-
 ## コンテナに入ってpsql使う
 ```
 docker exec -it `コンテナID` /bin/sh
